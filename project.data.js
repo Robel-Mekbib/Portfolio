@@ -4,7 +4,7 @@ window.RHEM_PROJECTS = [
     name: "Challenge Me",
     description:
       "Challenge Me is a self-accountability platform designed to help people turn their goals into commitments. Users can create personal challenges, set deadlines, accept or forfeit challenges, track their progress, and celebrate their achievements. Coming soon!",
-    thumbnail: "", // leave empty for a gradient placeholder
+    thumbnail: "challenge-me.jpg", 
     status: "in-development",
     tech: ["HTML", "CSS", "JavaScript", "Node.js"],
     expectedLaunchDate: null, // no confirmed date — don't invent one
