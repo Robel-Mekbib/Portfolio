@@ -1,18 +1,17 @@
 /* ============ Rhem Studio — Coming Soon page ============ */
 /* Swap these tokens for your real values from style.css */
 :root {
-  --cs-bg: #0b0b0f;
-  --cs-surface: #14141b;
-  --cs-surface-2: #1c1c26;
-  --cs-border: rgba(255, 255, 255, 0.08);
-  --cs-text: #f2f2f7;
-  --cs-text-dim: #9a9aa8;
-  --cs-accent: #7c5cff;
-  --cs-accent-2: #4ade80;
-  --cs-radius: 16px;
-  --cs-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
-  --cs-font: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  --cs-max: 1200px;
+   --primary-color: #2E86AB;
+    --primary-dark: #1B5E7A;
+    --secondary-color: #A23B72;
+    --accent-color: #F18F01;
+    --text-color: #2D3047;
+    --text-light: #64748b;
+    --background: #ffffff;
+    --section-bg: #f8fafc;
+    --border: #e2e8f0;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --gradient: linear-gradient(135deg, #2E86AB 0%, #A23B72 100%);
 }
 
 * { box-sizing: border-box; }
