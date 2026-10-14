@@ -28,4 +28,4 @@ window.RHEM_PROJECTS = [
       screenshots: [],
     },
   },
-
+  ];
