@@ -5,13 +5,13 @@
 }
 
 :root {
-    --primary-color: #14141b;
+    --primary-color: #2E86AB;
     --primary-dark: #1B5E7A;
     --secondary-color: #A23B72;
     --accent-color: #F18F01;
     --text-color: #2D3047;
     --text-light: #64748b;
-    --background: #ffffff;
+    --background: #14141b;
     --section-bg: #f8fafc;
     --border: #e2e8f0;
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
