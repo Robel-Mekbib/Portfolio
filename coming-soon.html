@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coming Soon — Rhem Studio</title>
+  <meta name="description" content="Projects currently in development at Rhem Studio." />
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="coming-soon.css" />
+</head>
+<body>
+
+  <!-- ===== NAV (replace this block with your existing nav markup, and add the Coming Soon link) ===== -->
+  <header class="cs-nav">
+    <a href="index.html" class="cs-nav__brand">
+      <img src="logo.png" alt="Rhem Studio" class="cs-nav__logo" />
+      <span>Rhem Studio</span>
+    </a>
+    <nav class="cs-nav__links">
+      <a href="index.html">Home</a>
+      <a href="coming-soon.html" class="is-active">Coming Soon</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="cs-hero">
+    <div class="cs-hero__inner">
+      <span class="cs-hero__eyebrow">Upcoming Projects</span>
+      <h1 class="cs-hero__title">Building What's Next.</h1>
+      <p class="cs-hero__subtitle">
+        A look at what's currently in development at Rhem Studio —
+        concepts, prototypes, and products on the way.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <main class="cs-main">
+    <!-- Loading state -->
+    <div id="cs-loading" class="cs-state" aria-live="polite">
+      <div class="cs-skeleton-grid">
+        <div class="cs-skeleton"></div>
+        <div class="cs-skeleton"></div>
+        <div class="cs-skeleton"></div>
+      </div>
+    </div>
+
+    <!-- Error state -->
+    <div id="cs-error" class="cs-state cs-state--hidden" role="alert">
+      <h2>Something went wrong.</h2>
+      <p>We couldn't load the upcoming projects right now.</p>
+      <button type="button" class="cs-btn" onclick="loadProjects()">Try again</button>
+    </div>
+
+    <!-- Empty state -->
+    <div id="cs-empty" class="cs-state cs-state--hidden">
+      <h2>Nothing here yet.</h2>
+      <p>New projects are on the way. Check back soon.</p>
+    </div>
+
+    <!-- Grid -->
+    <div id="cs-grid" class="cs-grid cs-state--hidden"></div>
+  </main>
+
+  <!-- ===== DETAIL MODAL ===== -->
+  <div id="cs-modal" class="cs-modal cs-state--hidden" role="dialog" aria-modal="true" aria-labelledby="cs-modal-title">
+    <div class="cs-modal__backdrop" data-close></div>
+    <div class="cs-modal__panel">
+      <button class="cs-modal__close" type="button" aria-label="Close" data-close>&times;</button>
+      <div id="cs-modal-body"></div>
+    </div>
+  </div>
+
+  <footer class="cs-footer">
+    <p>&copy; <span id="cs-year"></span> Rhem Studio. All rights reserved.</p>
+  </footer>
+
+  <script src="projects.data.js"></script>
+  <script src="coming-soon.js"></script>
+</body>
+</html>
