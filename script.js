@@ -44,7 +44,9 @@ if (contactForm) {
         const data = Object.fromEntries(formData);
         
         // Here you would typically send the data to a server
-      console.log("Form submitted:", Object.fromEntries(formData));
+    console.log("FormData variable:", formData);
+console.log("Form entries:", [...formData.entries()]);
+console.log("Form object:", Object.fromEntries(formData.entries()));
         
         // Show success message
         alert('Thank you for your message, Robel! I will get back to you soon.');
